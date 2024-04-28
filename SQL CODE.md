@@ -90,6 +90,7 @@
                                                 21	1198,
                                                 22	663,
                                                 23	28
+
 6.Group the orders by date and calculate the average number of pizzas ordered per day.
 
 
