@@ -37,10 +37,10 @@
         orders ON order_details.order_id = orders.order_id
     GROUP BY size;
 
-----orders by pizza size = M	15385
-                           L	18526
-                           S	14137
-                           XL	544
+----orders by pizza size = M	15385,
+                           L	18526,
+                           S	14137,
+                           XL	544,
                            XXL	28
 
 4.List the top 5 most ordered pizza types along with their quantities.
@@ -58,10 +58,10 @@
     ORDER BY qunt DESC
     LIMIT 5;
 
-----Top 5 most ordered pizza types = classic_dlx	2453
-                                     bbq_ckn	2432
-                                     hawaiian	2422
-                                     pepperoni	2418
+----Top 5 most ordered pizza types = classic_dlx	2453,
+                                     bbq_ckn	2432,
+                                     hawaiian	2422,
+                                     pepperoni	2418,
                                      thai_ckn	2371
 
 5.Determine the distribution of orders by hour of the day.
@@ -75,22 +75,21 @@
       GROUP BY time
       ORDER BY time;
 
-----Distribution of orders by hour of the day = 9	1
-                                                10	8
-                                                11	1231
-                                                12	2520
-                                                13	2455
-                                                14	1472
-                                                15	1468
-                                                16	1920
-                                                17	2336
-                                                18	2399
-                                                19	2009
-                                                20	1642
-                                                21	1198
-                                                22	663
+----Distribution of orders by hour of the day = 9	1,
+                                                10	8,
+                                                11	1231,
+                                                12	2520,
+                                                13	2455,
+                                                14	1472,
+                                                15	1468,
+                                                16	1920,
+                                                17	2336,
+                                                18	2399,
+                                                19	2009,
+                                                20	1642,
+                                                21	1198,
+                                                22	663,
                                                 23	28
-
 6.Group the orders by date and calculate the average number of pizzas ordered per day.
 
 
@@ -124,9 +123,9 @@
         pizza_types ON pizza_types.pizza_type_id = pizzas.pizza_type_id
     GROUP BY category;
 
-----persentage contribution in total revenuee by category = Classic	26.91%
-                                                            Veggie	23.68%
-                                                            Supreme	25.46%
+----persentage contribution in total revenuee by category = Classic	26.91%,
+                                                            Veggie	23.68%,
+                                                            Supreme	25.46%,
                                                             Chicken	23.96%
 
 8.Find the cumulative revenue generated over time.
@@ -144,10 +143,10 @@
         orders ON orders.order_id = order_details.order_id
     GROUP BY order_date) as rvn;
 
-----    2015-01-01	2713.85
-        2015-01-02	5445.75
-        2015-01-03	8108.15
-        2015-01-04	9863.6
+----    2015-01-01	2713.85,
+        2015-01-02	5445.75,
+        2015-01-03	8108.15,
+        2015-01-04	9863.6,
         2015-01-05	11929.55
         ....
         ....
