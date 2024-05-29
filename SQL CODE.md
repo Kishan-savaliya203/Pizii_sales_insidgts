@@ -1,4 +1,4 @@
-# Pizii_sales_insidgts
+# Pizii_sales_insigts
 
 #Questions:
 
